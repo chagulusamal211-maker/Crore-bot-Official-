@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-primary: #fbc02d;
+  --color-primary-hover: #f9a825;
+  --color-google: #2b70e4;
+  --color-modal-bg: #f8f9fa;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-[#121212] text-[#1a1a1b];
+  }
+}
+
+@layer components {
+  .input-field {
+    @apply w-full h-12 px-4 rounded-lg border border-gray-200 bg-white outline-none focus:border-primary focus:bg-[#fffdf0] transition-colors;
+  }
+  
+  .btn-primary {
+    @apply w-full h-12 rounded-lg bg-primary font-bold text-black uppercase tracking-wider transition-all hover:bg-primary-hover disabled:opacity-50 disabled:bg-gray-100 disabled:text-gray-400 active:scale-[0.98];
+  }
+
+  .tab-btn {
+    @apply flex-1 flex items-center justify-center gap-2 h-12 rounded-lg font-bold transition-all;
+  }
+
+  .tab-btn-active {
+    @apply bg-primary text-black;
+  }
+
+  .tab-btn-inactive {
+    @apply bg-gray-100 text-gray-400;
+  }
+}

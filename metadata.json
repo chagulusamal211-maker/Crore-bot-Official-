@@ -1,0 +1,6 @@
+{
+  "name": "CroreBet Auth",
+  "description": "A high-fidelity recreation of a premium betting site auth system with phone and email login/registration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
